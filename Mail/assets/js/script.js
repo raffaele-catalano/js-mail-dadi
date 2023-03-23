@@ -17,21 +17,21 @@ const insertMail = prompt('Inserisci la tua Mail', "xyz@boolean.it");
 console.log('mail inserita ->', insertMail);
 
 // 3 + 4 + 5
-let trovato = false;
+let mail = false;
 
 for (let i = 0; i < mailAccepted.length; i++) {
     if (insertMail === mailAccepted[i]) {
-        trovato = true;
+        mail = true;
     }
 
     console.log(mailAccepted[i]);
 }
 
-if (trovato === true) {
-    console.log('Si, login effetuato');
+if (mail === true) {
+    console.log('Accesso Eseguito');
     document.getElementById('output').innerHTML = "Accesso Eseguito"
 } else {
-    console.warn('No, errato');
+    console.warn('Accesso Negato');
     document.getElementById('output').innerHTML = "Accesso Negato"
 }
 
