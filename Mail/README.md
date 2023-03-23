@@ -6,9 +6,7 @@ Stampare un messaggio appropriato sull’esito del controllo.
 ## Development Schedule
 1. creare un array di email "che hanno accesso" al "portale";
 2. chiedere all'utente, tramite prompt, di fornire la sua email;
-3. controllare se la mail inserita corrisponde ad una presente nell'array;
-4. se si: stampare in pagina "Accesso Eseguito";
-5. se no: stampare in pagina "Accesso Negato".
+3. controllare se la mail inserita corrisponde ad una presente nell'array attraverso la creazione di un ciclo "for".
 <!-- ## Papar Information
 - Title:  `paper name`
 - Authors:  `A`,`B`,`C`
