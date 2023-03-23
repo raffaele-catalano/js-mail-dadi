@@ -1,7 +1,12 @@
-Dice
+Dice Wars!
 ===
 >Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+## Development Schedule
+1. Creare un array per ogni faccia del dado (da 1 a 6);
+2. Stabilire due variabili *randomiche*, una per il lancio dell' "umano" - una per il lancio del "computer;
+3. Impostare le condizioni affinchè risulti un vincitore (con l'eventualità di un pareggio).
 
 <!-- ## Papar Information
 - Title:  `paper name`
