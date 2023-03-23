@@ -1,16 +1,3 @@
-// schedule
-
-/*
-
-1- creare un array di di numeri da 1 a 6 (facce di un dado)
-2- creare due "const" random - una per l'umano una per il computer
-3- creare un ciclo "for" con relativo "if" per determinare il vincitore
-
-
-
-
-*/
-
 // 1
 const diceFaces = [
     "1",
@@ -22,8 +9,29 @@ const diceFaces = [
 ]
     console.log('facce del dado ->',diceFaces);
 
+// 2
 let humanDice = Math.floor((Math.random() * diceFaces.length) + 1)
     console.log('dado umano ->',humanDice);
+    document.getElementById("human").innerHTML =
+        `Human <br>
+        ${humanDice}`
     
 let computerDice = Math.floor((Math.random() * diceFaces.length) + 1)
     console.log('dado computer ->',computerDice);
+    document.getElementById("computer").innerHTML =
+        `Computer <br>
+        ${computerDice}`
+
+// 3
+if (humanDice > computerDice) {
+    console.log("vince umano");
+    document.getElementById('winner').innerHTML = `Human Wins!`
+} else if (humanDice === computerDice) {
+    console.log("pareggio");
+    document.getElementById('winner').innerHTML = `It's a Draw!`
+} else if (humanDice < computerDice) {
+    console.log("vince computer");
+    document.getElementById('winner').innerHTML = `Computer Wins!`
+}
+
+
