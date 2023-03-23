@@ -29,10 +29,12 @@ for (let i = 0; i < mailAccepted.length; i++) {
 
 if (mail === true) {
     console.log('Accesso Eseguito');
-    document.getElementById('output').innerHTML = "Accesso Eseguito"
+    document.getElementById('output').innerHTML = `
+    <i class="fa-solid fa-circle-check" style="color: #1ed760;"></i> Accesso Eseguito`
 } else {
     console.warn('Accesso Negato');
-    document.getElementById('output').innerHTML = "Accesso Negato"
+    document.getElementById('output').innerHTML = `
+    <i class="fa-solid fa-circle-xmark" style="color: #e10000;"></i> Accesso Negato`
 }
 
 

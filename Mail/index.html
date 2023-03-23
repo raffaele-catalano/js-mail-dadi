@@ -7,16 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://icons8.com/icon/bqI4gOgp4z1f/email-open">
+    <!-- font awesome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==' crossorigin='anonymous'/>
+    <!-- bootstrap -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.css' integrity='sha512-bR79Bg78Wmn33N5nvkEyg66hNg+xF/Q8NA8YABbj+4sBngYhv9P8eum19hdjYcY7vXk/vRkhM3v/ZndtgEXRWw==' crossorigin='anonymous'/>
     <link rel="icon" href="assets/img/mail-favicon.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Mail</title>
 </head>
 
-<body>
+<body class="bg-dark">
     
-
-    <h1 id="output"></h1>
-
+    
+    <div class="container w-50 mt-5">
+        <h1 class="text-center text-light mb-2 fw-bold">Welcome to our Platform</h1>
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center text-dark">Secret Devs</h2>
+                <p class="text-center text-dark">
+                    Inserisci la mail fornita in fase di registrazione
+                </p>
+            </div>
+            <div class="card-body">
+                <h4 id="output" class="text-center text-dark fw-bold"></h4>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>
